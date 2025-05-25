@@ -26,53 +26,9 @@ setInterval(() => {
   currentSlider = (currentSlider + 1) % sliders.length;
 }, 3000); // Adjust delay as needed
 
-// const form = document.getElementById("registerForm");
-//     const modal = document.getElementById("thankYouModal");
 
-//     form.addEventListener("submit", function (e) {
-//       e.preventDefault(); // prevent actual form submission
-//       modal.style.display = "flex";
-//       form.reset(); // optional: reset the form after submission
-//     });
 
-//     function closeModal() {
-//       modal.style.display = "none";
-//     }
-
-//     // Optional: close modal when clicking outside content
-//     window.onclick = function (event) {
-//       if (event.target == modal) {
-//         modal.style.display = "none";
-//       }
-//     }
-
-// const form = document.getElementById("registerForm");
-// const modal = document.getElementById("thankYouModal");
-
-// form.addEventListener("submit", function (e) {
-//   e.preventDefault(); // prevent actual form submission
-//   modal.style.display = "flex";
-//   form.reset(); // optional: reset the form after submission
-// });
-
-// function closeModal() {
-//   modal.style.display = "none";
-//   window.location.href = "/index.html"; // redirect after closing modal
-// }
-
-// // Optional: close modal when clicking outside content
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
-
-// // Optional: close modal when clicking outside content
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     closeModal();
-//   }
-// };
+// Close Button
 
 const form = document.getElementById("registerForm");
 const modal = document.getElementById("thankYouModal");
@@ -83,9 +39,9 @@ form.addEventListener("submit", function (e) {
   form.reset();
 });
 
+
+// Prevent click
 function closeModal() {
   modal.style.display = "none";
   window.location.href = "/index.html"; // redirect to courses page
 }
-
-// NO window.onclick handler here, so clicking outside modal-content won't close modal
