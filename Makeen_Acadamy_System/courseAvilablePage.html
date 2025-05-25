@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Overlay Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Gorditas:wght@400;700&family=Noto+Serif+Dives+Akuru&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <style>
+      body {
+        font-family: "Baloo Bhaijaan 2", sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .box {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 250px;
+        flex: 1 1 250px;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .description {
+        font-size: 1rem;
+        color: #555;
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .slider {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .slider img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s;
+        display: none;
+      }
+
+      .slider img.active {
+        display: block;
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 123, 255, 0.4);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .btn {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      .btn-secondary {
+        background-color: #28a745;
+      }
+
+      .btn-secondary:hover {
+        background-color: #1e7e34;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="/index.html"
+          ><img src="/assets/imgs/logo/logo3.PNG" alt="Logo"
+        /></a>
+      </div>
+      <nav>
+        <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/coursePage.html">Courses</a>
+        <a href="/consultants.html">Book</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+    <h2>Available Courses</h2>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="title">Makeen 1</div>
+        <div class="slider">
+          <img src="/assets/imgs/slider/s1.jpg" class="active" />
+          <img src="/assets/imgs/slider/s2.JPG" />
+          <img src="/assets/imgs/slider/s3.JPG" />
+        </div>
+        <div class="description">
+          Makeen Bootcamps V1 focuses on real-world challenges, career
+          readiness, and business environments.
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="title">Makeen 2</div>
+        <div class="slider">
+          <img src="/assets/imgs/slider/s11.JPG" class="active" />
+          <img src="/assets/imgs/slider/s12.jpg" />
+          <img src="/assets/imgs/slider/s13.JPG" />
+        </div>
+        <div class="description">
+          Makeen Bootcamps V2 focuses on real-world challenges, career
+          readiness, and business environments.
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="title">Makeen 3</div>
+        <div class="slider">
+          <img src="/assets/imgs/slider/s21.JPG" class="active" />
+          <img src="/assets/imgs/slider/s22.JPG" />
+          <img src="/assets/imgs/slider/s23.jpg" />
+        </div>
+        <div class="description">
+          Makeen Bootcamps V3 focuses on real-world challenges, career
+          readiness, and business environments.
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="title">Makeen 4</div>
+        <div class="slider">
+          <img src="/assets/imgs/slider/s31.jpg" class="active" />
+          <img src="/assets/imgs/slider/s32.JPG" />
+          <img src="/assets/imgs/slider/s33.jpg" />
+        </div>
+        <div class="description">
+          Makeen Bootcamps V3 focuses on real-world challenges, career
+          readiness, and business environments.
+        </div>
+
+        <div style="text-align: center; margin-top: 15px">
+          <button class="btn">Details</button>
+          <a href="enroll.html" style="text-decoration: none">
+            <button class="btn btn-secondary">Enroll me</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>
