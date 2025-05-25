@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Makeen_Acadamy_System.Models
 {
-    internal class Con_boking
+    public class Registration
     {
+
+        public int RegistrationId { get; set; }
+        public int BatchId { get; set; }
+
+        public int CustomerId { get; set; }
+
     }
 }

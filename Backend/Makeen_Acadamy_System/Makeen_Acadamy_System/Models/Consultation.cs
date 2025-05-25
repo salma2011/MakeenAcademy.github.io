@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Makeen_Acadamy_System.Models
 {
-    internal class Consultation
+    public class Consultation
     {
+      
+
+        public int ConsultationId { get; set; }
+        public string InstName { get; set; }
+        public string Description  { get; set; }
+        public string Purpose { get; set; }
+
+        public int CustomerId { get; set; }
+
+        public int InstuctorId { get; set; }
+
+
     }
 }
