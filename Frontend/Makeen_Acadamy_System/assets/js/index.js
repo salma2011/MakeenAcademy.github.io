@@ -24,7 +24,7 @@ setInterval(() => {
 
   // Move to next slider for next tick
   currentSlider = (currentSlider + 1) % sliders.length;
-}, 3000); // Adjust delay as needed
+}, 2000); // Adjust delay as needed
 
 
 
