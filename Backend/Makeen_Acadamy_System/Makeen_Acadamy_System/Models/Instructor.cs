@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Makeen_Acadamy_System.Models
 {
-    internal class Instructor
+    internal class Instuctor
     {
-        public Instructor(int instructorId, string instructorName)
+        public Instuctor(int instructorId, string instructorName)
         {
+            InstuctorID = instructorId;
+            InstuctorName = instructorName;
         }
 
         public int InstuctorID { get; set; }
