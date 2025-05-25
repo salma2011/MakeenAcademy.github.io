@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Makeen_Acadamy_System.Models
 {
-    internal class Order
+    internal class Payment
     {
-        public int ID { get; set; }
-        public int BookId { get; set; }
-        public int UserId { get; set; }
 
-        public DateTime Date { get; set; }
+
+        public int ID { get; set; }
+        public int OrderId { get; set; }
+        public int RigistrationId { get; set; }
+
+        public string status { get; set; }
       
 
     }
