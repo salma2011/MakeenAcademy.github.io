@@ -8,10 +8,10 @@ namespace Makeen_Acadamy_System.Models
 {
     public class Instructor
     {
-        public int InstructorID { get; set; }  // ✅ هذا هو المفتاح الأساسي
+        public int InstructorID { get; set; }  
         public string InstructorName { get; set; }
 
-        public Instructor() { } // EF Core يحتاج هذا الكونستركتر
+        public Instructor() { }
 
         public Instructor(int instructorId, string instructorName)
         {
