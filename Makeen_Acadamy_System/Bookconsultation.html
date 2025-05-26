@@ -89,7 +89,7 @@
   <body>
     <div class="form-container">
       <h2>Choose your consultant and start your journey today!</h2>
-      <form id="registerFormCon">
+      <form id="registerForm">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
 
@@ -102,5 +102,17 @@
         <button type="submit">Submit</button>
       </form>
     </div>
+
+    <!-- Modal -->
+    <div id="thankYouModal" class="modal">
+      <div class="modal-content">
+        <div class="checkmark">✅</div>
+        <h3>Thank you!</h3>
+        <p>We will contact you.</p>
+        <button class="close" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
